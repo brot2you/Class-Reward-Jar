@@ -281,6 +281,12 @@ button:focus-visible,input:focus-visible{outline:4px solid #ffd23f;outline-offse
 .P .nav{width:230px!important;height:218px!important;top:1555px!important}
 .P #nav0{left:27px!important}.P #nav1{left:265px!important}.P #nav2{left:503px!important}.P #nav3{left:741px!important}
 .nav{background-size:contain!important;background-position:center center!important}
+
+/* Decorative panel behind four independently clickable navigation buttons. */
+#navPanel{z-index:9;pointer-events:none;background-image:url("assets/Panneau%20de%20jeu%20dor%C3%A9%20aux%20%C3%A9toiles.png");background-repeat:no-repeat;background-position:center;background-size:100% 100%}
+.L #navPanel{left:147px;top:716px;width:1260px;height:278px}
+.P #navPanel{left:0;top:1485px;width:1000px;height:332px}
+.nav{z-index:10}
 </style>
 </head>
 <body>
@@ -376,6 +382,9 @@ button:focus-visible,input:focus-visible{outline:4px solid #ffd23f;outline-offse
   </button>
 
   <div id="view" class="abs hidden"></div>
+
+  <!-- Decorative backdrop; the navigation buttons remain interactive -->
+  <div id="navPanel" class="abs" aria-hidden="true"></div>
 
   <!-- bottom nav -->
   <button id="nav0" class="abs nav" type="button" data-view="home"><span class="ni">🏠</span><b>Home</b><small>Accueil</small></button>
