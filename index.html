@@ -263,6 +263,17 @@ button:focus-visible,input:focus-visible{outline:4px solid #ffd23f;outline-offse
 @keyframes conf{to{transform:translateY(1900px) rotate(720deg)}}
 @media (prefers-reduced-motion:reduce){#logoImg,#logoSheen,.glowBy,#jarSheen,.glint,.spark,#counter.full,#party .rart,#party .card{animation:none!important}.star.fall .in{animation-duration:.01s!important}}
 #hiddenFile{position:absolute;left:-9999px}
+
+/* Premium illustrated navigation: each PNG is a separate button; native click handlers preserved. */
+.nav{background-color:transparent!important;background-repeat:no-repeat!important;background-position:center!important;background-size:100% 100%!important;border:0!important;border-radius:0!important;box-shadow:none!important;overflow:visible}
+#nav0{background-image:url('assets/home.png')!important}
+#nav1{background-image:url('assets/classes.png')!important}
+#nav2{background-image:url('assets/history.png')!important}
+#nav3{background-image:url('assets/rewards.png')!important}
+.nav .ni,.nav b,.nav small{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+.nav.on{filter:drop-shadow(0 0 12px #ffe67b) brightness(1.1)}
+.nav:hover{filter:drop-shadow(0 0 9px #fff3a3) brightness(1.06)}
+.nav:active{transform:translateY(3px) scale(.97)!important;box-shadow:none!important}
 </style>
 </head>
 <body>
